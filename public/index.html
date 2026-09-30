@@ -10,6 +10,22 @@
     <h1>NighThematic</h1>
     <h2>Generate AI Images (but only dark-themed :P)</h2>
 
+    <main>
+        <textarea id="promptInput" maxlength="300" placeholder="Describe the required image..." rows="3"></textarea>
 
+        <button id="genBtn">Generate</button>
+
+        <p id="charCount">0 / 300</p>
+
+        <div id="status"></div>
+
+        <div id="imageContainer">
+            <img src="" hidden alt="" id="resultImg">
+        </div>
+
+        <p id="errorMsg" hidden></p>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
